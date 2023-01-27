@@ -1,0 +1,48 @@
+## Template Information
+
+Based on the template [Setting up an Organised Folder Structure for Research Projects by Nikola Vukovic](http://www.nikola.me/folder_structure.html) and tweaked  by [Ryan Straight](https://github.com/ryanstraight) with the [MA{VR}X Lab](https://mavrxlab.org) in mind, specifically, as the focus is on using R for data analysis, this template is simple enough to fit most needs and has the media structure necessary for projects within the lab.
+
+If you'd rather not use the R-based ecosystem for writing that's present in the template, that's fine. The folder structure will still serve you well.
+
+A placeholder publication draft can be found in `4-Dissemination/2-Publications/000-DRAFT/`. The actual report document being produced is an APA 6th edition document using the [`papaja`](https://github.com/crsh/papaja) package, and uses [`rfordatascience/tidytuesday`](https://github.com/rfordatascience/tidytuesday) code. You should also install `tinytex`, of course, as per the `papaja` instructions. Some demo code had been added to the script files and dummy text to the `draft.Rmd` to produce an example PDF. The `Bee Colony losses` dataset is loaded as an example. You'll notice heavy use of the `here` package, as well. 
+
+**This `draft.Rmd` file is just a demonstration, as you will likely want to keep your draft private.**
+
+
+## Authors
+
+1. Update the `contributors_table_template.csv` file in `1-Project_Management/4-Administration/` with relevant authors and contributors.
+1. Upload the CSV in step 2 of the [tenzing](https://rollercoaster.shinyapps.io/tenzing/) Shiny app. (You can use the file provided as a demonstration if you like.)
+1. Choose `Show papaja YAML` in Step 3.
+1. Replace the `author` and `affiliation` frontmatter in the `draft.Rmd` file with this new YAML.
+
+## Report
+
+The resultant publications from this project go in `4-Dissemination/2-Publications/` in subfolders for each individual publication. The `papaja` document, `draft.Rmd`, has a variety of comments and instructions within as comments. These are general suggestions that follow a generic research paper structure. 
+
+## Folder and file structure
+
+This is the default structure for a project. It's very basic and you should feel welcome to alter it to your liking. There is another README in the `3-Study/2-Content/2-Media/` folder that explains the extensive structure there. This structure is not meant to be in chronological order, just organized.
+
+1. Project Management
+    1. Proposals
+    1. Finance (notes on seeking funding, copies of grant proposals, etc; contains NSF grant template)
+    1. Reports (not papers; project-related reports like status)
+    1. Administration (CRediT author list, publication checklist)
+1. Ethics Governance
+    1. Ethics Approval (IRB, CITI certification)
+    1. Forms (**blank** consent, waiver, etc forms; completed forms should be stored securely)
+1. Study (_TEMPLATE subfolder contains the following for each different study)
+    1. Input (files/docs used in the experiment itself; survey instrument, anything)
+    1. Content
+        1. Data (raw and tidied data)
+        1. Media (video recordings, audio, screencasts, so on; do **not** include identifiable participant content)
+    1. Data Analysis (eda, munging scripts, transformation, etc)
+    1. Outputs (tables, figures, etc)
+1. Dissemination
+    1. Presentations (archived)
+    1. Publications (archived)
+    1. Publicity (archived)
+    
+
+Note that the Dissemination folder is for *archiving* content. Once something is published or made available, put a copy in the appropriate folder.
